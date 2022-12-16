@@ -14,18 +14,18 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/open-sauce-one" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" type="text/css"/>
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="w-4/5 max-w-7xl m-auto">
     <NavBar />
     <slot />
   </body>
 </html>
 <style is:global>
   :root {
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
     --accent: 124, 58, 237;
     --accent-gradient: linear-gradient(
       45deg,
@@ -35,7 +35,7 @@ const { title } = Astro.props;
     );
   }
   html {
-    font-family: system-ui, sans-serif;
+    font-family: 'OpenSauceOneRegular', sans-serif;
   }
   code {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,

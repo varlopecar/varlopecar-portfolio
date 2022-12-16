@@ -21,11 +21,6 @@ module.exports = {
 				'dark-light': '#3C3C3F',
 				'blue-accent': '#00E7FF',
 				'rose-accent': '#FF00E7'
-			},
-			fontFamily: {
-				'body': ['Lato', 'sans-serif'],
-				'heading': ['Montserrat', 'sans-serif'],
-				'code': ['Roboto Mono', 'monospace']
 			}
 		},
 	},

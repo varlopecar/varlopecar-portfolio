@@ -1,20 +1,54 @@
+---
+import Card from "./Card.astro";
+---
+
 <!-- section with an image in one side and text in the other -->
-<section>
-  <div class="container">
-    <h1
-      class="text-accent my-10 font-extrabold tracking-wider animate-pulse text-6xl font-heading"
-    >
-      I'm Carlos Vargas
-    </h1>
-    <p class="text-accent font-body pt-5 tracking-wide leading-10">
-      Hi! My name is Carlos and I'm a developer based in Grenoble, France.
-      Fullstack Developer, Javascript Engineer. <br />
-      <a
-        href="https://open.spotify.com/user/2wu3ihsfm7v4maf69dl4033dd?si=23139871386a4888"
-        target="_blank"
-        >
-        <span class="bg-rose-accent rounded-lg w-1/2 p-2 text-center hover:">Hip-Hop and Jazz Lover.</span>
-      </a>
-    </p>
+<section class="m-auto">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-2 place-items-center">
+    <Card>
+      <div class="p-6">
+        <h1 class="text-3xl font-bold text-black">
+          Hi! My name is Carlos. Fullstack Developer, Javascript Engineer.
+        </h1>
+        <p class="text-black font-body text-s pt-5 leading-8">
+          I'm a 20 year old developer from Mexico. I'm currently based in
+          Grenoble, France.
+          <a
+            href="https://open.spotify.com/user/2wu3ihsfm7v4maf69dl4033dd?si=23139871386a4888"
+            target="_blank"
+          >
+            <span class="bg-rose-accent rounded-lg w-1/2 p-2 text-center hover:"
+              >Hip-Hop and Jazz Lover.</span
+            >
+          </a>
+          My main focus is in web development, but I also have experience in mobile
+          development.
+        </p>
+        <!-- social media links -->
+        <div class="flex flex-row justify-center pt-5">
+          <a
+            href="https://www.linkedin.com/in/varlopecar/"
+            target="_blank"
+            class="p-2"
+          >
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </a>
+          <a
+            href="https://github.com/varlopecar"
+            target="_blank"
+            class="p-2"
+          >
+            <i class="fa-brands fa-github fa-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </Card>
+    <Card>
+      <img
+        src="../../public/images/profile.jpeg"
+        alt="Carlos"
+        class="w-full h-full object-cover"
+      />
+    </Card>
   </div>
 </section>
